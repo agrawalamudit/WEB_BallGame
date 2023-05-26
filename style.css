@@ -1,0 +1,90 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: blueviolet;
+}
+
+.box{
+    height: 188px;
+    width: 500px;
+    margin: 219px 400px;
+    display: flex;
+    background-color:white;
+    position:relative;
+}
+
+
+.bar{
+    height: 94px;
+    width: 14px;
+    background-color: black;
+}
+
+.ball
+{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 64px;
+    left: 14px;
+    
+    animation: moveBall 2s infinite;
+}
+
+#one{
+    position: absolute;
+    top:0;
+    animation: changeOne 2s infinite;
+}
+
+#two
+{
+    position:absolute;
+    left:486px;
+    top:94px;
+    
+    animation: changeTwo 2s infinite;
+}
+
+@keyframes changeOne
+{
+    0%{
+        top:0px;
+    }
+    50%{
+        top: 94px;
+    }
+    75%{
+        top:0;
+    }
+}
+@keyframes changeTwo
+{
+    0%{
+        top:94px;
+    }
+    50%{
+        top: 0px;
+    }
+    100%
+    {
+        top:94px;
+    }
+
+}
+@keyframes moveBall
+{
+    0%{ 
+    left: 14px;
+    }
+    50%{
+        left: 457px;
+    }
+    100%{
+        left:14px;
+    }
+}
